@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手工作品具体详情展示界面</title>
+    <link rel="stylesheet" href="css/handcart.css">
+    <link rel="stylesheet" href="css/magnifier.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/layui.css">
+</head>
+<body>
+    <!-- 3d菜单栏+ -->
+    <div class="nav_menu w">
+        <div class="menu_item">
+            <div class="home">情侣</div>
+            <div class="web_home">戒指...</div>
+        </div>
+        <div class="menu_item">
+            <div class="home">老人</div>
+            <div class="web_home">围脖...</div>
+        </div>
+        <div class="menu_item">
+            <div class="home">儿童</div>
+            <div class="web_home">奥特曼...</div>
+        </div>
+        <div class="menu_item">
+            <div class="home">学生</div>
+            <div class="web_home">小物件</div>
+        </div>
+        <div class="menu_item">
+            <div class="home">纪念</div>
+            <div class="web_home">作纪念品</div>
+        </div>
+    </div>
+
+    <!-- 放大镜插件 -->
+    <div class="magnifier" id="magnifier1">
+		<div class="magnifier-container">
+			<div class="images-cover"></div>
+			<!--当前图片显示容器-->
+			<div class="move-view"></div>
+			<!--跟随鼠标移动的盒子-->
+		</div>
+		<div class="magnifier-assembly">
+			<div class="magnifier-btn">
+				<span class="magnifier-btn-left">&lt;</span>
+				<span class="magnifier-btn-right">&gt;</span>
+			</div>
+			<!--按钮组-->
+			<div class="magnifier-line">
+				<ul class="clearfix animation03">
+					<li>
+						<div class="small-img">
+							<img src="img/1-3.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="img/1-2.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="img/1-4.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="img/1-3.png" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="img/1-3.png" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--缩略图-->
+		</div>
+		<div class="magnifier-view"></div>
+		<!--经过放大的图片显示容器-->
+    </div>
+
+    <!-- 商品介绍 -->
+    <div class="show">
+        <h1>商品介绍</h1>
+        <p id="name">名字:情人锁</p>
+        <p id="intro">介绍:据说在很久很久以前，有一对非常相爱的情侣，但是在有一天，他们因为一点点事情就分开了，但是男的一个觉得很可惜，他很想挽回这段感情，但是对于这个女生来说，
+            她已经觉得没有那个必要了，她无论这个男孩子怎么说，她都无动于衷，即使这个男孩子放下了他所有的尊严，还是没有留住这个女孩要走的心，所以这个男孩在很生气的情况下，去选择了
+            一个爱这个男孩的人，这个男孩也就这个情人锁的一端接口打开了，自此，再也没有去碰过这个物品。
+        </p>
+        <p id="rule">大小:
+            <button>大</button>
+            <button>中</button>
+            <button>小</button>
+        </p>
+        <p id="address">收货地址:
+            <div id="box">	 
+                <img src="img/省份.png" >
+                <select class="layui-form-label" id="form1" >
+                  <option>请选择省份</option>
+                
+                </select>
+                <img src="img/城市.png" >
+                <select class="layui-form-label" id="form2">
+                  <option>请选择城市</option>
+                  
+                </select>
+                <img src="./img/区%20%20域.png" >
+                <select class="layui-form-label" id="form3">
+                  <option>请选择地区</option>
+                  
+                </select>
+                
+                
+                <h1>详细地址</h1>
+                  <div class="layui-form-item layui-form-text">
+                    
+                    <div class="layui-input-block">
+                      <textarea name="desc" placeholder="请输入内容" class="layui-textarea" id="text"></textarea>
+                    </div>
+                </div>
+                <button type="button" class="layui-btn layui-btn-normal" id="btn">提交</button>
+                
+            </div>
+            
+        </p>
+    </div>
+    <!-- 引入的js -->
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myjs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/magnifier.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            
+            var magnifierConfig = {
+                magnifier : "#magnifier1",//最外层的大容器
+                width : 500,//承载容器宽
+                height : 500,//承载容器高
+                moveWidth : null,//如果设置了移动盒子的宽度，则不计算缩放比例
+                zoom : 5//缩放比例
+            };
+        
+            var _magnifier = magnifier(magnifierConfig);
+        
+            /*magnifier的内置函数调用*/
+            /*
+                //设置magnifier函数的index属性
+                _magnifier.setIndex(1);
+        
+                //重新载入主图,根据magnifier函数的index属性
+                _magnifier.eqImg();
+            */
+        });
+        </script>
+</body>
+</html>

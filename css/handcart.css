@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 3D菜单栏 */
+.w {
+    width:100%;
+    margin: 10px auto;
+}
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 50px;
+    padding: 10px;
+    color: #79ebb2f3;
+}
+.menu_item {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+.menu_item:hover {
+    cursor: pointer;
+    transform: rotateX(90deg);
+}
+.home, .web_home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 300px;
+}
+.home {
+    background-color: #45be82f3;
+    z-index: 11;
+    transform: translateZ(25px);
+}
+.web_home {
+    background-color: #124535;
+    transform: translateY(25px) rotateX(-90deg);
+}
+/* 商品介绍 */
+.show {
+    width: 750px;
+    height: 550px;
+    border:1px solid #333;
+    position: absolute;
+    margin-top: -431px;
+    margin-left: 45%;
+}
+.show h1 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.show #name {
+    font-size: 20px;
+    text-indent: 2em;
+}
+.show #intro {
+    font-size: 20px;
+    text-indent: 2em;
+}
+.show #rule {
+    text-indent: 2em;
+    font-size: 20px;
+}
+.show #rule button {
+    width: 50px;
+}
+.show #address {
+    font-size: 20px;
+    text-indent: 2em;
+}
+.show #address #address1 {
+    width: 150px;
+    height: 20px;
+
+}

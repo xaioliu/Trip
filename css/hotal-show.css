@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-size: 25px;
+    font-family: 微软雅黑;
+    font-weight: 200;
+    color: #28c23ddc;
+    text-align: center;
+}
+.content {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid #333;
+    position: flex;
+    margin-left: 170px;
+    margin-top: 50px;
+    float: left;
+}
+.content .out-box {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+}
+.content .out-box .inner-box {
+    width: 3600px;
+    height: 500px;
+    position: relative;
+    left: 0;
+}
+.content .out-box .inner-box img {
+    width: 1200px;
+    height: 500px;
+}
+
+.content .right img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 558px;
+    margin-top: -49px;
+    background-color: rgb(34, 124, 177);
+    border-radius: 50%;
+}
+.bighouse {
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 555px;
+}
+.bighouse ul li {
+    width: 1200px;
+    height: 150px;
+    border: 1px solid #333;
+    list-style: none;
+}
+.bighouse ul li img {
+    width: 150px;
+    height: 120px;
+}
+.bighouse ul li #show {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    left: 85%;
+}
+.bighouse ul li i {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.bighouse ul li .smoke {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.bighouse ul li .food {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 215px;
+}
+.bighouse ul li .window {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 275px;
+}
+.bighouse ul li a {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 330px;
+}
+.bighouse ul li .set-up {
+    width: 1200px;
+    height: 308px;
+    background-color: #c4c1c1;
+    position: absolute;
+    margin-top: 3px;
+    z-index: 999;
+    display: none;
+}
+.bighouse ul li .set-up p {
+    float: left;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(12, 63, 78);
+    margin-top: 15px;
+}
+.bighouse ul li .set-up h1 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.bighouse ul li .set-up #stop {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: -391px;
+}
+.bighouse ul li .set-up  #open {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: -318px;
+}
+.bighouse ul li .set-up  .form-control {
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: -239px;
+    font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.bighouse ul li .set-up #submit_barraget {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: -64px;
+    
+}
+.bighouse ul li .set-up #barrage {
+    position: fixed;
+    left: 1130px;
+    
+}
+/*组件主样式*/
+.overflow-text{
+    display: block;
+    white-space:nowrap;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    opacity:0;
+    clear: both;
+    padding:0 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    color:#fff;
+    animation:colorchange 3s infinite alternate;
+    -webkit-animation:colorchange 3s infinite alternate; /*Safari and Chrome*/
+}
+@keyframes colorchange{
+    0%{
+        color:red;
+    }
+    50%{
+        color:green;
+    }
+    100%{
+        color:#6993f9;
+    }
+}

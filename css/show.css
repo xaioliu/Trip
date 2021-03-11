@@ -1,0 +1,49 @@
+.show {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+}
+.show .newShow {
+    width: 900px;
+    height: 450px;
+    background-color: rgb(107, 218, 208);
+    position: relative;
+    margin-top: 125px;
+    margin-left: 285px;
+}
+.show #close {
+    position: absolute;
+    margin-left: 428px;
+    color: white;
+    font-size: 25px;
+}
+.show h1 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 270px;
+    color: rgb(76, 165, 216);
+}
+.show p {
+    color: rgb(189, 56, 207);
+    font-size: 17px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 120px;
+    line-height: 30px;
+}
+.show img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: -45px;
+}

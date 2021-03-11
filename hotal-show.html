@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hotal-show.css">
+    <title>酒店预订</title>
+</head>
+<body>
+    <h1>结束一天的疲劳,给你的身体放一个假</h1>
+    <div class="content">
+       <div class="out-box">
+           <div class="inner-box">
+               <img src="img/3-1.jpg" alt="">
+               <img src="img/nature-3.jpg" alt="">
+           </div>
+       </div>
+       <div class="right"><img src="img/2-2.png" alt=""></div>
+    </div>
+
+    <!-- 类型选择 -->
+    <div class="bighouse">
+        <ul>
+            <li>
+                <p>标准间</p>
+                <img src="img/l-1.jpg" alt="">
+                <i>大床</i>
+                <i class="smoke">可吸烟</i>
+                <i class="food">无参食</i>
+                <i class="window">有窗</i>
+                <a href="#">不可取消</a>
+                <button id="show">点击评论</button>
+                <div class="set-up">
+                   <p>18平米</p>
+                   <p>不可加床</p>
+                   <p>2.3楼</p>
+                   <p>独立浴室</p><br>
+                   <h1>评论</h1>
+                   <button id="stop" class="btn btn-primary">停止</button>
+                   <button id="open" class="btn btn-primary">弹</button>
+	               <textarea type="text" class="form-control" name="" id="barrage_content" placeholder="添加弹幕内容"></textarea><button class="btn btn-primary" id="submit_barraget">发送</button>
+                    <div id="barrage">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>大床间</p>
+                <img src="img/l-2.jpg" alt="">
+                <i>大床</i>
+                <i class="smoke">可吸烟</i>
+                <i class="food">无参食</i>
+                <i class="window">有窗</i>
+                <a href="#">不可取消</a>
+                <button id="show">查看详细信息</button>
+                <div class="set-up">
+                    <p>18平米</p>
+                    <p>不可加床</p>
+                    <p>2.3楼</p>
+                    <p>独立浴室</p>
+                 </div>
+            </li>
+            <li>
+                <p>双人间</p>
+                <img src="img/l-3.jpg" alt="">
+                <i>大床</i>
+                <i class="smoke">可吸烟</i>
+                <i class="food">无参食</i>
+                <i class="window">有窗</i>
+                <a href="#">不可取消</a>
+                <button id="show">查看详细信息</button>
+                <div class="set-up">
+                    <p>18平米</p>
+                    <p>不可加床</p>
+                    <p>2.3楼</p>
+                    <p>独立浴室</p>
+                 </div>
+            </li>
+        </ul>
+
+    </div>
+    <!-- 引入jq -->
+    <script src="js/jquery-1.12.2.js"></script>
+    <!-- 引入自己写的js -->
+    <script src="js/hotal-show.js"></script>
+    <script src="js/Hotal.js"></script>
+    <script src="js/datas.js"></script>
+    <script type="text/javascript">
+        // 数据初始化
+        var Obj = $('body').barrage({
+            data: data,   //数据列表
+            row: 5,    //显示行数
+            time: 2500,    //间隔时间
+            gap: 20,    //每一个间隙
+            position: 'fixed',    //绝对方向
+            left: '1130px',    //方向
+            top: '20%',   //方向
+            ismoseverclose : true,   //悬浮是否停止
+            height: 30,   //设置单个div的高度
+            display: 'none',   //默认影藏
+        })
+        Obj.start();
+        // 添加评论
+        $("#submit_barraget").click(function () {
+            var val = $("#barrage_content").val();
+            // 磁珠的格式与data.js的2数据格式要一致
+            var addVal = {
+                href : '',
+                text : val
+            }
+            // 添加进数组
+            Obj.data.unshift(addVal);
+            alert('评论成功');
+        })
+
+        $("#open").click(function () {
+            Obj.start();
+        })
+        $("#stop").click(function () {
+            Obj.start();
+        })
+    </script>
+</body>
+</html>

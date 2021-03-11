@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    width: 100%;
+    height: 150px;
+    z-index: 99;
+}
+.nav li {
+    width: 248px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    background-color: rgb(141, 243, 243);
+    border: 1px solid #333;
+    position: relative;
+    margin-left: 2px;
+  
+}
+.nav li a{
+    text-decoration: none;
+    color: green;
+    margin-top: 12px;
+    margin-left: -33px;
+    position: absolute;
+}
+.nav li .cont {
+    width: 250px;
+    height: 150px;
+    background-color: #e1e1e1e1;
+    position: absolute;
+    margin-top: 50px;
+    display: none;
+}
+.nav li .cont #list .list-title img {
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    margin-top: -3px;
+}
+.nav li .cont #list .list-title {
+    width: 20px;
+    height: 150px;
+    background-color: #f1f1f1;
+}
+.tips {
+    width: 300px;
+    height: 50px;
+    margin-top: 70px;
+    font-size: 20px;
+    margin-left: 35px;
+}
+.foodHeader {
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 170px;
+}
+.foodHeader h1 {
+    width: 1200px;
+    height: 45px;
+    color: lightseagreen;
+    background-color: #f1f1f1f1;
+} 
+.foodHeader #foodImg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -45px;
+    z-index: 99;
+}
+.foodHeader table {
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    background-image: url('../img/f1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #333;
+    
+}
+.foodHeader table th {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: rgb(64, 202, 179);
+    border: 1px solid #333;
+}
+.foodHeader table tr td {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+    color: #1283a5;
+}
+.foodHeader table tr  .foodName, .price, .nums, .delete, .subprice  {
+    text-align: center;
+}
+.foodHeader table tr .subprice {
+    font-size: 25px;
+}
+.foodHeader table tr .nums input {
+    width: 100px;
+    height: 24px;
+    position: relative;
+    text-align: center;
+}
+.foodHeader table tr .nums .add {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -27px;
+    border: 1px solid #333;
+}
+.foodHeader table tr .nums .desc  {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: 1px solid #333;
+}
+.foodHeader .setelement {
+    width: 1200px;
+    height: 40px;
+    background-color: #83e3ec;
+    position: absolute;
+    margin-top: 700px;
+}
+.foodHeader .setelement:hover {
+    cursor: pointer;
+}
+.foodHeader .setelement em {
+    width: 250px;
+    height: 40px;
+    position: relative;
+    margin-left: 99px;
+    font-size: 25px;
+}
+.foodHeader .setelement   #collection {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.foodHeader .setelement   #collectionl {
+    /* width: 34px;
+    height: 38px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 8px; */
+    display: none;
+}
+
+.foodHeader .setelement   #delete {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.foodHeader table tr .choose {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: 90px;
+}
+.foodHeader table tr .delete:hover {
+    cursor: pointer;
+}
+.foodHeader table tr .delete img {
+    width: 150px;
+    height: 150px;
+}
+.foodImg {
+    background-color: #c2c2c2e1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: -271px;
+    z-index: 99;
+    display: none;
+}
+ .foodImg #foodImg{
+    position: fixed;
+    margin-left: 420px;
+    margin-top: 86px;
+}
+.foodImg .shut-down {
+    position: relative;
+    margin-left: 97%;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.foodImg .shut-down:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* 底部认证 */
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #78b7ca;
+    position: absolute;
+    margin-top: 950px;
+    text-align: center;
+}
+.footer p {
+    margin-top: 8px;
+}
